@@ -17,32 +17,33 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i" rel="stylesheet">
 
+
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="css/decolines.css" />
 
-  <!-- Favicon 
+  <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 
-  <!-- Javascript 
+  <!-- Javascript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="http://code.jquery.com/jquery-2.2.4.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
   <script src="js/ScrollMagic.min.js"></script>
   <script src="js/main.js"></script>
 
+
+
 </head>
 
 <body class="homeBody">
 
-  <!-- Header 
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Header -->
   <div class="container">
     <div class="row">
       <div class="twelve columns" style="margin-top: 2%">
@@ -51,23 +52,54 @@
     </div>
   </div>
 
-  <!-- Introduction contatiner 
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Introduction contatiner -->
+
   <div class="container">
     <div class="row">
       <div class="ten columns" style="margin-top: 10%">
-
-      <h1 class="element">Hi, I'm Chris, currently the design director of Ideas Made Digital. I've had the pleasure of working with clients such as <span><a href="#mb1">Mercedes-Benz</a></span> and <span><a href="#gr1">The Guardian</a></span>. I've worked with startups for <span><a>John Lewis labs</a></span>, helped create products like <span><a href="#kn1">Kinpik</a></span> and even had a failed project on <span><a href="https://www.kickstarter.com/projects/980363115/ooovre-a-better-way-to-buy-books-online" target="_blank">Kickstarter</a></span>.</h1>
+      <h1 class="blue">Hi, I'm Chris, currently the design director of Ideas Made Digital. I've had the pleasure of working with clients such as <span><a href="#mb1">Mercedes-Benz</a></span> and <span><a href="#gr1">The Guardian</a></span>. I've worked with startups for <span><a>John Lewis labs</a></span>, helped create products like <span><a href="#kn1">Kinpik</a></span> and even had a failed project on <span><a href="https://www.kickstarter.com/projects/980363115/ooovre-a-better-way-to-buy-books-online" target="_blank">Kickstarter</a></span>.</h1>
         
       </div>
     </div>
   </div>
+ <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <article>
+            <label for="search">Search </label>
 
- <!-- Work Listings 
- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <input id="search" name="search" placeholder="Search for work here" type="text" data-toggle="hideseek" data-list=".default_list_data" data-nodata="No results found" autocomplete="off">
+            <ul class="vertical default_list_data">
+
+              <li><h3 class="project_title" id="mb1">A series of award winning brochure apps for Mercedes-Benz.</h3>
+              <div class="line" style="width: 59px;"></div>
+              <p class="project_call"><a href="Project_MB_Apps.html">FIND OUT MORE</a></p>
+              <hr>
+              </li>
+
+              <li><h3 class="project_title" id="mb1">A series of award winning brochure apps for Mercedes-Benz.</h3>
+              <div class="line" style="width: 59px;"></div>
+              <p class="project_call"><a href="Project_MB_Apps.html">FIND OUT MORE</a></p>
+              <hr>
+              </li>
+
+              <li>BootMetro</li>
+              <li>Kickstrap</li>
+              <li>Foundation</li>
+              <li>GroundworkCSS</li>
+              <li>Gumby</li>
+              <li>HTML KickStart</li>
+              <li>IVORY</li>
+              <li>Kube</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  <!-- Work Listings -->
   <div class="container">
     <!-- Work project 1 -->
-    <div class="row" data-aos="fade-up">
+    <div class="row">
       <div class="two columns">
         <hr>
           <h1><span style="font-style:italic; color: #37373e">01.</span></h1>
@@ -76,12 +108,12 @@
         <hr>
         <h3 class="project_title" id="mb1">A series of award winning brochure apps for Mercedes-Benz.</h3>
         <div class="line" style="width: 59px;"></div>
-        <p class="project_call"><a href="projects/Template.html">FIND OUT MORE</a></p>
+        <p class="project_call"><a href="Project_MB_Apps.html">FIND OUT MORE</a></p>
       </div>
     </div>
 
     <!-- Work project 2 -->
-    <div class="row" data-aos="fade-up">
+    <div class="row">
       <div class="two columns">
         <hr>
           <h1><span style="font-style:italic; color: #37373e">02.</span></h1>
@@ -94,8 +126,8 @@
       </div>
     </div>
 
-    <!-- Work project 3 -->
-    <div class="row" data-aos="fade-up">
+    <!-- Work project 2 -->
+    <div class="row">
       <div class="two columns">
         <hr>
           <h1><span style="font-style:italic; color: #37373e">03.</span></h1>
@@ -108,8 +140,8 @@
       </div>
     </div>
 
-    <!-- Work project 4 -->
-    <div class="row" data-aos="fade-up">
+    <!-- Work project 2 -->
+    <div class="row">
       <div class="two columns">
         <hr>
           <h1><span style="font-style:italic; color: #37373e">04.</span></h1>
@@ -122,8 +154,8 @@
       </div>
     </div>
 
-    <!-- Work project 5 -->
-    <div class="row" data-aos="fade-up">
+    <!-- Work project 2 -->
+    <div class="row">
       <div class="two columns">
         <hr>
           <h1><span style="font-style:italic; color: #37373e">05.</span></h1>
@@ -136,8 +168,8 @@
       </div>
     </div>
 
-    <!-- Work project 6 -->
-    <div class="row" data-aos="fade-up">
+    <!-- Work project 2 -->
+    <div class="row" data-aos="fade-up" >
       <div class="two columns">
         <hr>
           <h1><span style="font-style:italic; color: #37373e">06.</span></h1>
@@ -150,8 +182,8 @@
       </div>
     </div>
 
-    <!-- Work project 7 -->
-    <div class="row" data-aos="fade-up">
+    <!-- Work project 2 -->
+    <div class="row">
       <div class="two columns">
         <hr>
           <h1><span style="font-style:italic; color: #37373e">07.</span></h1>
@@ -164,8 +196,8 @@
       </div>
     </div>
 
-    <!-- Work project 8 -->
-    <div class="row" data-aos="fade-up">
+    <!-- Work project 2 -->
+    <div class="row">
       <div class="two columns">
         <hr>
           <h1><span style="font-style:italic; color: #37373e">08.</span></h1>
@@ -178,8 +210,8 @@
       </div>
     </div>
 
-    <!-- Work project 9 -->
-    <div class="row" data-aos="fade-up">
+    <!-- Work project 2 -->
+    <div class="row">
       <div class="two columns">
         <hr>
           <h1><span style="font-style:italic; color: #37373e">09.</span></h1>
@@ -194,43 +226,68 @@
 
   </div>
 
-<!-- End Document 
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-<script src="js/anime.min.js"></script>
-
-<!-- Typing animation 
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script src="js/typed.js"></script>
-<script>
-  $(function(){
-      $(".element").typed({
-        strings: ["Hi, I'm Chris, ^500 currently the design director of Ideas Made Digital.^500 I've had the pleasure of working with clients such as <span>Mercedes-Benz</span>"],
-        contentType: 'html',
-        typeSpeed: 0
-      });
-  });
-</script>
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
-
-<!-- Animate on scroll move to animation js-->
+<!-- End Document -->
+  <script src="js/anime.min.js"></script>
+  <script src="js/linemaker.js"></script>
 
 <script>
 var myAnimation = anime({
   targets: ['.blue'],
-  delay: 400,
+  delay: 3000,
   duration: 2000,
   opacity: 1,
   loop: false
 });
 </script>
 
-<!-- Animate on scroll initialise-->
-<script>
-AOS.init();
-</script>
-<!-- End Document -->
+    <script>
+    (function() {
+      var lineMaker = new LineMaker({
+        position: 'fixed',
+        lines: [
+          {top: 0, left: '10%', height: '100%', width: 2, color: '#32323b', hidden: true},
+          {top: 0, left: '40%', height: '100%', width: 2, color: '#32323b', hidden: true},
+          {top: 0, left: '60%', width: 2, height: '100%', color: '#32323b', hidden: true},
+          {top: 0, left: '80%', width: 2, height: '100%', color: '#32323b', hidden: true},
+
+          {top: 0, left: '10%', width: 2, height: '100%', color: '#E6BE8A', hidden: true, animation: { duration: 1000, easing: 'easeInOutExpo', delay: 300, direction: 'TopBottom' }},
+          {top: 0, left: '40%', width: 2, height: '100%', color: '#E6BE8A', hidden: true, animation: { duration: 1000, easing: 'easeInOutExpo', delay: 300, direction: 'BottomTop' }},
+          {top: 0, left: '60%', width: 2, height: '100%', color: '#E6BE8A', hidden: true, animation: { duration: 1000, easing: 'easeInOutExpo', delay: 200, direction: 'TopBottom' }},
+          {top: 0, left: '80%', width: 2, height: '100%', color: '#E6BE8A', hidden: true, animation: { duration: 1000, easing: 'easeInOutExpo', delay: 300, direction: 'BottomTop' }}
+          
+        ]
+      });
+      
+      setTimeout(function() {
+        lineMaker.animateLineIn(4, {
+          complete: function() { lineMaker.showLine(0); }
+        });
+        lineMaker.animateLineIn(5, {
+          complete: function() { lineMaker.showLine(1); }
+        });
+        lineMaker.animateLineIn(6, {
+          complete: function() { lineMaker.showLine(2); }
+        });
+        lineMaker.animateLineIn(7, {
+          complete: function() { lineMaker.showLine(3); }
+        });
+        
+        
+      }, 100);
+
+      setTimeout(function() {
+        lineMaker.animateLineOut(4);
+        lineMaker.animateLineOut(5);
+        lineMaker.animateLineOut(6);
+        lineMaker.animateLineOut(7);
+      }, 2000);
+
+      
+    })();
+    </script>
 </body>
+
+<script type="text/javascript" src="js/jquery.hideseek.js"></script>
 
 
 </html>
