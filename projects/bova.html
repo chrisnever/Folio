@@ -15,8 +15,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link href="https://fonts.googleapis.com/css?family=Sumana" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i" rel="stylesheet">
 
 
   <!-- CSS
@@ -24,6 +23,7 @@
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/skeleton.css">
   <link rel="stylesheet" href="../css/aos.css">
+  <link rel="stylesheet" href="../css/app.css">
 
 
   <!-- Favicon
@@ -41,7 +41,7 @@
 
 </head>
 
-<body class="workBodyDark">
+<body class="workBody">
 
   <!-- Header 
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -60,11 +60,9 @@
   <div class="container blue" data-aos="fade-up">
     <div class="row">
       <div class="twelve columns" style="margin-top: 10%">
-        <h6>A series of award winning brochure apps for Mercedes-Benz.</h6>
-        <h1>A series of award winning brochure apps for Mercedes-Benz.</h1>
-
-
-
+        <h6>Pre Title</h6>
+        <h1>Main Title for project</h1>
+        <p>intro paragraph</p>
   <!-- Testing code span - remove on live version -->
 
       <code>
@@ -80,23 +78,40 @@
 
   <!-- Work Listings -->
 
-  <div class="container-fluid" style="background-color: #333; height: 600px;" data-aos="fade-up">
-    <div class="container">
+  <div class="container-fluid" style="background-color: #333; height: 600px;" data-aos="fade-up" id="scrollorama">
     <div class="row">
       <div class="twelve columns">
-        <h1>title</h1>
+        <h1 id="changecol">title</h1>
       </div>
     </div>
+  </div>
+   <div class="container-fluid" style="background-color: #333; height: 600px;" data-aos="fade-up">
+    <div class="row">
+      <div><img style="width: 100%" src="../img/projects/apps_img_1@2x.jpg"></div>
     </div>
   </div>
 
   <div class="container-fluid" style="background-color: #222; height: 600px;" data-aos="fade-up">
-    <div><img style="width: 100%" src="../img/projects/apps_img_1@2x.jpg"></div>
+  <div class="container">
       <div class="row">
-        <div class="twelve columns">
-      </div>
+      <div class="twelve columns">
+        <div class="three columns" data-aos="fade-right" data-aos-delay="0">
+          <div style="background-color: #333333; height: 300px; width: 100%"></div>
+        </div>
+        <div class="three columns" data-aos="fade-right" data-aos-delay="100">
+          <div style="background-color: #333333; height: 300px; width: 100%"></div>
+        </div>
+        <div class="three columns" data-aos="fade-right" data-aos-delay="200">
+          <div style="background-color: #333333; height: 300px; width: 100%"></div>
+        </div>
+        <div class="three columns" data-aos="fade-right" data-aos-delay="300">
+          <div style="background-color: #333333; height: 300px; width: 100%"></div>
+        </div>
+        </div>
+    </div>
     </div>
   </div>
+
 <!-- End Document 
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="../js/anime.min.js"></script>
@@ -110,13 +125,23 @@ var myAnimation = anime({
 });
 </script>
 
-<!-- Animate on scroll initialise-->
+<!-- Scrollmagic initialise
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script>
+var controller = new ScrollMagic.Controller();
+new ScrollMagic.Scene({triggerElement: "#scrollorama"})
+          .setClassToggle("#changecol", "active") // add class toggle
+          .addTo(controller);
+</script>
+
+<!-- Animate on scroll initialise
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
 <script>
 AOS.init();
 </script>
 
 </body>
-
 
 </html>

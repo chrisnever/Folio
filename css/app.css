@@ -19,3 +19,12 @@
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
+/* Aos testing */
+.active{ 
+    color: #111 !important; 
+    -webkit-transition: color 500ms ease-out 1s;
+    -moz-transition: color 500ms ease-out 1s;
+    -o-transition: color 500ms ease-out 1s;
+    transition: color 500ms ease-out 1s;
+}
